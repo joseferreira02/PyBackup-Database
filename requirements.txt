@@ -1,0 +1,3 @@
+typer[all]
+psycopg2-binary
+python-dotenv
