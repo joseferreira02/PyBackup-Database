@@ -54,9 +54,9 @@ jobs:
       
       - name: Build Docker image
         run: |
-          docker build -f Dockerfile -t cli-app:latest .
+          docker build -f dockerfile -t cli-app:latest .
       
       - name: Test Docker image
         run: |
-          docker run --rm cli-app:latest start --help
+          docker run --rm cli-app:latest
         continue-on-error: true
