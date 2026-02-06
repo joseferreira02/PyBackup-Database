@@ -21,6 +21,7 @@ venv
 README.md
 dockerfile.dev
 Makefile
+.devcontainer
 
 # Data
 backups/
