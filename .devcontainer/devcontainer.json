@@ -1,8 +1,11 @@
 {
     "name": "DB Backup Dev",
     "build": {
-        "dockerfile": "../dockerfile",
+        "dockerfile": "../dockerfile.dev",
         "context": ".."
+    },
+      "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
     },
     "workspaceFolder": "/app",
     "customizations": {

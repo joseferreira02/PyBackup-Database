@@ -1,0 +1,20 @@
+#heavier python image with more tools for development
+FROM python:3.11
+
+#more complete tools 
+RUN apt-get update && apt-get install -y \
+    git \
+    vim \
+    curl \
+    wget \
+    build-essential \
+    libpq-dev
+
+#create a non-root user for development
+RUN useradd -m -s /bin/bash developer
+
+#creates working directory and copies code
+WORKDIR /app
+COPY . .
+
+USER developer
